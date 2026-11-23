@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f4ef" />
+  <meta name="description" content="رفيق منهجية البحث — مراجعة مركزة، بطاقات حفظ واختبارات تفاعلية لمادة مناهج البحث العلمي." />
+  <title>رفيق منهجية البحث | مراجعة ذكية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="رفيق منهجية البحث، الرئيسية">
+        <span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M9 11.5c5.3-2.4 9.8-1.4 13 1.2v21c-3.2-2.7-7.7-3.6-13-1.2V11.5Z"/><path d="M35 11.5c-5.3-2.4-9.8-1.4-13 1.2v21c3.2-2.7 7.7-3.6 13-1.2V11.5Z"/><path d="m16 20 3 3 5-5"/></svg></span>
+        <span><strong>رفيق</strong><small>منهجية البحث</small></span>
+      </a>
+      <div class="side-label">مساحة المذاكرة</div>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <button class="nav-link active" data-view="home"><span class="nav-icon">⌂</span>الرئيسية</button>
+        <button class="nav-link" data-view="library"><span class="nav-icon">▤</span>ملخص المحاور <span class="nav-count">6</span></button>
+        <button class="nav-link" data-view="cards"><span class="nav-icon">▣</span>بطاقات الحفظ</button>
+        <button class="nav-link" data-view="quiz"><span class="nav-icon">◉</span>اختبر نفسك</button>
+        <button class="nav-link" data-view="essays"><span class="nav-icon">✎</span>الأسئلة المقالية</button>
+        <button class="nav-link" data-view="traps"><span class="nav-icon">⌁</span>الفروق والفخاخ</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="exam-note"><span class="note-icon">✳</span><div><b>مذاكرة بلا حشو</b><p>معلومة مركزة، ثم تدريب يثبتها.</p></div></div>
+        <div class="source-mini">المصدر: ملف أسئلة المقرر<br />المحاضرات ١–٧</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="فتح القائمة">☰</button>
+        <div class="crumb"><span>مساحة المذاكرة</span><b>/</b><strong id="pageCrumb">الرئيسية</strong></div>
+        <div class="top-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="ابحث في الملخص…" aria-label="ابحث في الملخص" /><kbd>⌘ K</kbd></label>
+          <button class="round-btn" id="resetProgress" title="إعادة ضبط التقدم" aria-label="إعادة ضبط التقدم">↻</button>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+      <footer class="footer"><span>رفيق منهجية البحث</span><span>مراجعة مبنية على ملف أسئلة المقرر · المحاضرات ١–٧</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
